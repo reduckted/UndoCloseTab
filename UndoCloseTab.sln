@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoCloseTab", "source\UndoCloseTab\UndoCloseTab.csproj", "{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{75D5A6C0-6FF5-4294-BBB6-9A1419177337}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		nuget.config = nuget.config
+		publish.json = publish.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{E2049728-083A-4FC4-825E-C1AFB1F9AA98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B7058EF2-0921-4F60-8AEB-66940B3800FF}"
+	ProjectSection(SolutionItems) = preProject
+		build\PublishToMarketplace.targets = build\PublishToMarketplace.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{4B0435C8-B657-4EC1-8C96-58EEF298A142}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{A3213CCA-2A00-4C46-AD03-2A56C557752D}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FBA3AD77-76D2-4E12-BD51-C58D4A05FB3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoCloseTab.UnitTests", "tests\UndoCloseTab.UnitTests\UndoCloseTab.UnitTests.csproj", "{6496330A-85F7-46F0-970B-3369A97DFB19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Debug|x86.ActiveCfg = Debug|x86
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Debug|x86.Build.0 = Debug|x86
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Release|x86.ActiveCfg = Release|x86
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A}.Release|x86.Build.0 = Release|x86
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Debug|x86.Build.0 = Debug|Any CPU
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Release|x86.ActiveCfg = Release|Any CPU
+		{6496330A-85F7-46F0-970B-3369A97DFB19}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64ED8E69-4842-4BC3-ABED-4A41E6A6363A} = {E2049728-083A-4FC4-825E-C1AFB1F9AA98}
+		{A3213CCA-2A00-4C46-AD03-2A56C557752D} = {4B0435C8-B657-4EC1-8C96-58EEF298A142}
+		{6496330A-85F7-46F0-970B-3369A97DFB19} = {FBA3AD77-76D2-4E12-BD51-C58D4A05FB3E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95451AFF-807C-4A5A-BECC-DDED3EF5EDF9}
+	EndGlobalSection
+EndGlobal

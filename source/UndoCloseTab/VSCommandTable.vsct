@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <Extern href="stdidcmd.h"/>
+    <Extern href="vsshlids.h"/>
+    <Include href="VSGlobals.vsct"/>
+    <Include href="KnownImageIds.vsct"/>
+
+    <Commands package="Package">
+        <Buttons>
+            <!-- Priority is after cmdidCloseAllButPinned. -->
+            <Button guid="Package" id="UndoCommand" priority="0x0930" type="Button">
+                <Parent guid="guidSHLMainMenu" id="IDG_VS_WINDOW_ARRANGE"/>
+                <Icon guid="ImageCatalogGuid" id="Undo" />
+                <CommandFlag>IconIsMoniker</CommandFlag>
+                <Strings>
+                    <ButtonText>Undo Close Tab</ButtonText>
+                    <LocCanonicalName>.Window.UndoCloseTab</LocCanonicalName>
+                </Strings>
+            </Button>
+        </Buttons>
+    </Commands>
+
+    <KeyBindings>
+        <KeyBinding guid="Package" id="UndoCommand" editor="guidVSStd97" mod1="Control Shift" key1="R"/>
+    </KeyBindings>
+
+    <CommandPlacements>
+        <!-- Priority is after cmdidCloseAllButPinned. -->
+        <CommandPlacement guid="Package" id="UndoCommand" priority="0x0410">
+            <Parent guid="guidSHLMainMenu" id="IDG_VS_EZ_DOCWINDOWOPS"/>
+        </CommandPlacement>
+
+        <!-- Priority is after cmdidCloseAllButPinned. -->
+        <CommandPlacement guid="Package" id="UndoCommand" priority="0x0410">
+            <Parent guid="guidSHLMainMenuExtra" id="IDG_VS_EZ_DOCWELLOPS"/>
+        </CommandPlacement>
+    </CommandPlacements>
+
+    <Symbols>
+        <GuidSymbol name="Package" value="{7696de46-379a-4a1d-99bf-bc10fdca6d3f}">
+            <IDSymbol name="UndoCommand" value="0x0100" />
+            <IDSymbol name="UndoGroup" value="0x0200" />
+        </GuidSymbol>
+
+            <!-- This should be in guidSHLMainMenu, but it's not defined there. -->
+        <GuidSymbol name="guidSHLMainMenuExtra" value="{ 0xd309f791, 0x903f, 0x11d0, { 0x9e, 0xfc, 0x00, 0xa0, 0xc9, 0x11, 0x00, 0x4f } }">
+            <IDSymbol name="IDG_VS_EZ_DOCWELLOPS" value="0x0742"/>
+        </GuidSymbol>
+    </Symbols>
+</CommandTable>
