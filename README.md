@@ -1,3 +1,9 @@
+# Deprecated 
+
+This extension is no longer supported because the feature is now part of Visual Studio 2022 17.3. 🎉
+
+https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-3-is-now-available/#reopen-closed-documents
+
 # Undo Close Tab
 
 A Visual Studio extension to re-open the last closed tab.
